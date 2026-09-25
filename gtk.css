@@ -65,7 +65,7 @@
 @define-color theme_unfocused_selected_bg_color @accent;
 @define-color theme_unfocused_selected_fg_color #040708;
 @define-color unfocused_insensitive_color @muted;
-@define-color unfocused_borders alpha(@foreground, 0.1);
+@define-color unfocused_borders alpha(@accent, 0.10);
 @define-color warning_color @yellow;
 @define-color error_color @red;
 @define-color success_color @green;

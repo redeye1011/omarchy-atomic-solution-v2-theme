@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.local/state/omarchy/current/theme/extras/atomic-core.txt",
+    "color": {
+      "1": "cyan",
+      "2": "white"
+    },
+    "padding": {
+      "right": 3
+    }
+  },
+  "display": {
+    "separator": " 󰁔 ",
+    "color": {
+      "keys": "cyan",
+      "title": "white"
+    }
+  },
+  "modules": [
+    { "type": "title", "format": "{user-name-colored}󰇝{host-name-colored} [ION://CORE]" },
+    { "type": "custom", "format": "────────────────────────────────────────" },
+    { "type": "os", "key": "OS.DISTRO", "format": "{name} {version}" },
+    { "type": "kernel", "key": "SYS.KERNEL", "format": "{release}" },
+    { "type": "wm", "key": "WM.COMPOSITOR", "format": "{name} v{version}" },
+    { "type": "terminal", "key": "IO.TERMINAL", "format": "{name}" },
+    { "type": "cpu", "key": "CPU.NODE", "format": "{name} ({cores-logical}c)" },
+    { "type": "gpu", "key": "GPU.ACCEL", "format": "{name}" },
+    { "type": "memory", "key": "MEM.PULSE", "format": "{used} / {total} ({percentage})" },
+    { "type": "colors", "symbol": "diamond", "block": { "range": [0, 7] } }
+  ]
+}

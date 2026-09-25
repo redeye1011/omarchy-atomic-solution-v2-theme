@@ -49,7 +49,7 @@ omarchy theme install https://github.com/redeye1011/omarchy-atomic-solution-them
 | `ghostty.conf`, `foot.ini` | Native terminal color schemes with 0.93 background opacity |
 | `gtk.css` | GTK / libadwaita styling at 0.93 opacity (needs `extras/50-gtk-css`) |
 | `icons.theme` | `Yaru-blue-dark` |
-| `backgrounds/` | 10 high-resolution (3840×2160) backgrounds tuned to the Atomic Solution palette |
+| `backgrounds/` | 6 high-resolution (3840×2160) deep-space backgrounds tuned to the Atomic Solution palette |
 | `unlock.png`, `preview-unlock.png` | Atomic logo cut for boot-time disk unlock, SDDM, and Hyprlock |
 | `extras/50-gtk-css` | Theme-set hook that links the current theme's `gtk.css` into `~/.config/gtk-3.0/` and `~/.config/gtk-4.0/` |
 
@@ -69,16 +69,12 @@ Switchable instantly via the background switcher (`Super + Ctrl + Space`) or `om
 
 | File | Image Description | Source / License |
 |---|---|---|
-| `0-atomic-core.jpg` | Interactive 3D Ion Core Metaphor | Atomic Solution WebGL |
-| `1-atomic-particles.jpg` | Procedural particle network | Atomic Solution WebGL |
-| `2-atomic-manifesto.jpg` | Cybernetic design manifesto | Atomic Solution WebGL |
-| `3-atomic-showcase.jpg` | Horizontal showcase environment | Atomic Solution WebGL |
-| `4-bubble-nebula.jpg` | The Bubble Nebula (NGC 7635) — Giant expanding stellar shell | NASA / ESA / Hubble (Public Domain) |
-| `5-veil-nebula.jpg` | The Veil Nebula (Cygnus Loop) — Filamentary supernova shockwave | NASA / ESA / Hubble (Public Domain) |
-| `6-southern-ring.jpg` | The Southern Ring Nebula (NGC 3132) — Concentric gas rings | NASA / ESA / CSA / STScI Webb NIRCam (Public Domain) |
-| `7-tarantula-webb.jpg` | The Tarantula Nebula (30 Doradus) — Cosmic particle nursery | NASA / ESA / CSA / STScI Webb (Public Domain) |
-| `8-helix-core.jpg` | The Helix Nebula (NGC 7293) — Cosmic ion core "Eye" | NASA / JPL-Caltech / GALEX (Public Domain) |
-| `9-cygnus-loop.jpg` | Cygnus Loop Shockwave — Complex quantum filament mesh | NASA / JPL Ultraviolet (Public Domain) |
+| `0-bubble-nebula.jpg` | The Bubble Nebula (NGC 7635) — Giant expanding stellar shell | NASA / ESA / Hubble (Public Domain) |
+| `1-veil-nebula.jpg` | The Veil Nebula (Cygnus Loop) — Filamentary supernova shockwave | NASA / ESA / Hubble (Public Domain) |
+| `2-southern-ring.jpg` | The Southern Ring Nebula (NGC 3132) — Concentric gas rings | NASA / ESA / CSA / STScI Webb NIRCam (Public Domain) |
+| `3-tarantula-webb.jpg` | The Tarantula Nebula (30 Doradus) — Cosmic particle nursery | NASA / ESA / CSA / STScI Webb (Public Domain) |
+| `4-helix-core.jpg` | The Helix Nebula (NGC 7293) — Cosmic ion core "Eye" | NASA / JPL-Caltech / GALEX (Public Domain) |
+| `5-cygnus-loop.jpg` | Cygnus Loop Shockwave — Complex quantum filament mesh | NASA / JPL Ultraviolet (Public Domain) |
 
 All space imagery from NASA/ESA/Hubble/Webb is in the public domain, precision-cropped to 3840×2160 (4K UHD), converted to grayscale, and gradient-mapped onto the Atomic Solution electric teal (`#2fd3c9`) and quantum violet (`#878af8`) color spectrum.
 

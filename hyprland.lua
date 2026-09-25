@@ -1,7 +1,7 @@
--- Atomic Solution: cyan-to-violet border gradient, obsidian void background,
+-- Atomic Solution: electric cyan/teal border gradient, obsidian void background,
 -- and 0.93 translucency for every skinned window (no blur).
 
-local active_border_color = { colors = { "rgba(2fd3c9ee)", "rgba(878af8ee)" }, angle = 45 }
+local active_border_color = { colors = { "rgba(2fd3c9ee)", "rgba(5cebe2ee)" }, angle = 45 }
 local inactive_border_color = "rgba(1e282dee)"
 local shadow_color = "rgba(00000088)"
 

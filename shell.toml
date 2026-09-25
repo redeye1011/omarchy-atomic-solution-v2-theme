@@ -1,4 +1,4 @@
-# Atomic Solution: shell surfaces at 0.93 alpha with laser cyan and quantum violet accents.
+# Atomic Solution: shell surfaces at 0.93 alpha with laser electric cyan/teal accents.
 # Omarchy shell surfaces. Colors derive from colors.toml.
 
 [bar]
@@ -11,8 +11,8 @@ size-horizontal  = 26
 size-vertical    = 28
 
 [hyprland]
-active-border            = "rgba(2fd3c9ee) rgba(878af8ee) 45deg"
-active-border-foreground = "rgba(2fd3c9ee) rgba(878af8ee) 45deg"
+active-border            = "rgba(2fd3c9ee) rgba(5cebe2ee) 45deg"
+active-border-foreground = "rgba(2fd3c9ee) rgba(5cebe2ee) 45deg"
 
 [controls]
 normal-color        = "#e4eaec"
@@ -120,7 +120,7 @@ text             = "#ffffff"
 placeholder      = "#788b94"
 text-error       = "#f2645a"
 border           = "rgba(120, 139, 148, 0.45)"
-border-active    = "rgba(2fd3c9ee) rgba(878af8ee) 45deg"
+border-active    = "rgba(2fd3c9ee) rgba(5cebe2ee) 45deg"
 border-error     = "#f2645a"
 border-alpha     = 1.0
 selection        = "#2fd3c9"

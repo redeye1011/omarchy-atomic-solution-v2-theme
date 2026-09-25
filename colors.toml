@@ -1,4 +1,4 @@
-# Atomic Solution: precision dark cybernetic palette with electric ion teal and quantum violet.
+# Atomic Solution: precision dark cybernetic palette with electric ion cyan/teal.
 mode = "dark"
 
 accent = "#2fd3c9"
@@ -20,16 +20,16 @@ yellow = "#e8a33d"
 orange = "#f59e0b"
 green = "#3dd68c"
 cyan = "#2fd3c9"
-blue = "#878af8"
-magenta = "#c084fc"
+blue = "#4ea8de"
+magenta = "#56cfe1"
 brown = "#786358"
 
 bright_red = "#ff7b72"
 bright_yellow = "#fbbf24"
 bright_green = "#7fe06a"
 bright_cyan = "#5cebe2"
-bright_blue = "#a5b4fc"
-bright_magenta = "#d8b4fe"
+bright_blue = "#72efdd"
+bright_magenta = "#80ffdb"
 
-hyprland_active_border = "rgba(2fd3c9ee) rgba(878af8ee) 45deg"
+hyprland_active_border = "rgba(2fd3c9ee) rgba(5cebe2ee) 45deg"
 hyprland_inactive_border = "rgba(1e282dee)"

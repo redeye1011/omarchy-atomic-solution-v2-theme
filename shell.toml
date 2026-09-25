@@ -84,6 +84,7 @@ selected-background-alpha = 0.12
 selected-text             = "#2fd3c9"
 selected-border           = "hyprland.active-border-foreground"
 selected-border-alpha     = 0.35
+selected-border-width     = 1
 
 [menu]
 background                = "#040708"
@@ -98,6 +99,7 @@ selected-background-alpha = 0.12
 selected-text             = "#2fd3c9"
 selected-border           = "hyprland.active-border-foreground"
 selected-border-alpha     = 0.35
+selected-border-width     = 1
 
 [polkit]
 background       = "#040708"

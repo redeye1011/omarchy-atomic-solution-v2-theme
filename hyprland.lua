@@ -1,16 +1,14 @@
--- Atomic Solution v2: Kinetic Hologram Console
--- 4-stop rotating plasma loop, 22px photon bloom glow, and cyberSnap (popin 90%) kinetic window pop.
+-- Atomic Solution v2: Minimal Precision Console (Zero Glow)
+-- Pure razor cyan border gradient, zero drop shadow/glow, tight 4/6px gaps, and calmSmooth glide.
 
 local active_border_color = {
-  colors = { "rgba(2fd3c9ee)", "rgba(5cebe2ee)", "rgba(f0feffee)", "rgba(2fd3c9ee)" },
+  colors = { "rgba(2fd3c9ee)", "rgba(5cebe2ee)", "rgba(e2feffee)", "rgba(2fd3c9ee)" },
   angle = 45,
 }
-local inactive_border_color = "rgba(10191cee)"
-local shadow_color = "rgba(47d7cd45)" -- Soft omnidirectional photon bloom
+local inactive_border_color = "rgba(141f24ee)"
 
--- Cybernetic Beziers
-hl.curve("cyberSnap",  { type = "bezier", points = { { 0.05, 0.90 }, { 0.10, 1.02 } } }) -- Instant punch + micro-settle
-hl.curve("cyberDecel", { type = "bezier", points = { { 0.16, 1.00 }, { 0.30, 1.00 } } }) -- Clean exponential decel
+-- Cybernetic Beziers: buttery smooth organic deceleration, zero bounce/overshoot
+hl.curve("calmSmooth", { type = "bezier", points = { { 0.22, 1.00 }, { 0.36, 1.00 } } }) -- Silky exponential glide
 hl.curve("pulseRot",   { type = "bezier", points = { { 0.00, 0.00 }, { 1.00, 1.00 } } }) -- Constant velocity rotation
 
 hl.config({
@@ -19,8 +17,8 @@ hl.config({
       active_border = active_border_color,
       inactive_border = inactive_border_color,
     },
-    gaps_in = 3,
-    gaps_out = 5,
+    gaps_in = 4,
+    gaps_out = 6,
     border_size = 2,
   },
 
@@ -32,14 +30,9 @@ hl.config({
   },
 
   decoration = {
-    rounding = 8,
+    rounding = 6,
     shadow = {
-      enabled = true,
-      range = 22,
-      render_power = 4,
-      color = shadow_color,
-      color_inactive = "rgba(00000088)",
-      offset = "0 0",
+      enabled = false,
     },
   },
 
@@ -48,15 +41,17 @@ hl.config({
   },
 })
 
--- Dynamic Animations
-hl.animation({ leaf = "borderangle", enabled = true, speed = 24,  bezier = "pulseRot",   style = "loop" })
-hl.animation({ leaf = "windowsIn",   enabled = true, speed = 3.6, bezier = "cyberSnap",  style = "popin 90%" })
-hl.animation({ leaf = "windowsOut",  enabled = true, speed = 2.0, bezier = "cyberDecel", style = "popin 92%" })
-hl.animation({ leaf = "fadeIn",      enabled = true, speed = 2.2, bezier = "cyberDecel" })
-hl.animation({ leaf = "fadeOut",     enabled = true, speed = 1.8, bezier = "cyberDecel" })
+-- Dynamic Animations: less movement (popin 97%), slower (450ms), buttery smooth
+hl.animation({ leaf = "borderangle", enabled = true, speed = 36,  bezier = "pulseRot",   style = "loop" })
+hl.animation({ leaf = "windowsIn",   enabled = true, speed = 4.5, bezier = "calmSmooth", style = "popin 97%" })
+hl.animation({ leaf = "windowsOut",  enabled = true, speed = 3.2, bezier = "calmSmooth", style = "popin 98%" })
+hl.animation({ leaf = "fadeIn",      enabled = true, speed = 3.5, bezier = "calmSmooth" })
+hl.animation({ leaf = "fadeOut",     enabled = true, speed = 2.8, bezier = "calmSmooth" })
 
--- Opacity hierarchy: 0.96 active window focus for maximum crispness, 0.88 inactive
-o.window({ tag = "default-opacity" }, { opacity = "0.96 0.88" })
+if o and o.window then
+  -- Opacity hierarchy: 0.96 active window focus for maximum crispness, 0.88 inactive
+  o.window({ tag = "default-opacity" }, { opacity = "0.96 0.88" })
 
--- Skinned terminals and GTK apps dim through background alpha
-o.window("^(com\\.mitchellh\\.ghostty|foot|footclient|org\\.gnome\\..*|org\\.pulseaudio\\.pavucontrol)$", { opacity = "1 0.9" })
+  -- Skinned terminals and GTK apps dim through background alpha
+  o.window("^(com\\.mitchellh\\.ghostty|foot|footclient|org\\.gnome\\..*|org\\.pulseaudio\\.pavucontrol)$", { opacity = "1 0.9" })
+end

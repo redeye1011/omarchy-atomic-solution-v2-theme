@@ -3,9 +3,10 @@
 The next evolution of the [Atomic Solution](https://atomic-solution.com) theme for [Omarchy](https://omarchy.org).
 
 Synthesized from bleeding-edge WebGL ion shaders and high-precision instrument consoles:
-- **Kinetic Hologram Pop:** Windows snap into place instantly via `cyberSnap` cubic-beziers (scaling from 90% dimension for HUD precision).
-- **Traveling Plasma Crest:** Continuous 4-stop active border rotation loop (`#2fd3c9` → `#5cebe2` → `#f0feff` → `#2fd3c9`).
-- **Screen-Space Photon Bloom:** 22px omnidirectional soft cyan bloom glow (`rgba(47, 211, 201, 0.28)`).
+- **Kinetic Hologram Pop:** Windows glide into place smoothly via `calmSmooth` cubic-beziers (calm 450ms popin from 97% dimension with zero bounce or deceleration freeze).
+- **Traveling Plasma Crest:** Continuous 4-stop active border rotation loop (`#2fd3c9` → `#5cebe2` → `#e2feff` → `#2fd3c9`).
+- **Zero-Glow Minimalist Precision:** Drop shadows and bloom disabled (`shadow.enabled = false`) for razor-crisp edges and zero GPU compositing overhead.
+- **Calibrated Workspace Gaps:** 4px inner gaps, 6px outer gaps, and 2px razor border for clean separation while preserving 98%+ operational desktop real estate.
 - **Ion Core Fastfetch:** Custom ASCII atom core logo with system status telemetry.
 - **Dedicated `btop.theme`:** Precision cybernetic telemetry curve mapping CPU, RAM, and thermals to Atomic's signal thresholds.
 - **Starship Prompt Preset:** Diamond-status cybernetic terminal prompt.
@@ -34,7 +35,7 @@ omarchy theme set atomic-solution-v2
 | File | What it does |
 |---|---|
 | `colors.toml` | High-contrast electric cyan/teal palette with neutral slate framework |
-| `hyprland.lua` | `cyberSnap` kinetic beziers, 4-stop rotating plasma loop, 22px photon bloom glow, and 0.96/0.88 opacity |
+| `hyprland.lua` | `calmSmooth` kinetic beziers, 4-stop rotating plasma loop, zero glow, 4/6px gaps, and 0.96/0.88 opacity |
 | `shell.toml` | Compact 24px aerospace telemetry status rail with 11px monospace base |
 | `btop.theme` | Dedicated Btop++ telemetry color curves (cyan plasma, thermal alerts) |
 | `extras/fastfetch.jsonc` | Fastfetch configuration with custom Ion Core ASCII art (`extras/atomic-core.txt`) |

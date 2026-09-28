@@ -31,5 +31,5 @@ bright_cyan = "#5cebe2"
 bright_blue = "#72efdd"
 bright_magenta = "#80ffdb"
 
-hyprland_active_border = "rgba(2fd3c9ee) rgba(5cebe2ee) 45deg"
-hyprland_inactive_border = "rgba(1e282dee)"
+hyprland_active_border = "rgba(2fd3c9f0) rgba(5cebe2f0) rgba(e2fefff0) rgba(3ddcd3f0) 45deg"
+hyprland_inactive_border = "rgba(16262bee)"
